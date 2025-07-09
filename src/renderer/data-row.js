@@ -124,7 +124,7 @@ const DataRow = function ({ key, value, expanded, indent, onToggleExpand, level 
     }
 
     const valueWrapper = document.createElement("span")
-    valueWrapper.className = `value ${thisDataType.toLowerCase()}`
+    valueWrapper.className = `value ${`${thisDataType.toLowerCase() !== 'null' ? thisDataType.toLowerCase() : ''}`}}`
     valueEl = document.createElement("span")
     valueEl.className = "value-data"
     valueEl.textContent = thisDataType === "string" ? `"${value}"` : `${value === "null" ? "null" : value}`
