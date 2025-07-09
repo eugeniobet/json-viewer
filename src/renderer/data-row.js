@@ -127,7 +127,8 @@ const DataRow = function ({ key, value, expanded, indent, onToggleExpand, level 
     valueWrapper.className = `value ${thisDataType.toLowerCase()}`
     valueEl = document.createElement("span")
     valueEl.className = "value-data"
-    valueEl.textContent = thisDataType === "string" ? `"${value}"` : value
+    valueEl.textContent = thisDataType === "string" ? `"${value}"` : `${value === "null" ? "null" : value}`
+
     if (valueType) valueWrapper.appendChild(valueType)
     valueWrapper.appendChild(valueEl)
     keyValueWrapper.appendChild(valueWrapper)
