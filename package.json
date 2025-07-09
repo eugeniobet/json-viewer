@@ -1,6 +1,6 @@
 {
   "name": "@andypf/json-viewer",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "description": "A javascript library to visualize json nicely",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -63,5 +63,8 @@
   "bugs": {
     "url": "https://github.com/andypf/json-viewer/issues"
   },
-  "homepage": "https://github.com/andypf/json-viewer#readme"
+  "homepage": "https://github.com/andypf/json-viewer#readme",
+  "dependencies": {
+    "@andypf/json-viewer": "github:eugeniobet/json-viewer"
+  }
 }
